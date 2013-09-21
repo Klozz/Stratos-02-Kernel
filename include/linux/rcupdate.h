@@ -61,6 +61,8 @@ extern int rcu_scheduler_active;
 #include <linux/rcutree.h>
 #elif defined(CONFIG_TINY_RCU)
 #include <linux/rcutiny.h>
+#elif defined(CONFIG_JRCU)
+#include <linux/jrcu.h> 
 #elif defined(CONFIG_PREEMPT_RCU)
 #include <linux/rcupreempt.h>
 #else
